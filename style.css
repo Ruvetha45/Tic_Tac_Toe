@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+#header {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+h1 {
+  font-size: 40px;
+  color: #0f0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #fff;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures equal columns */
+  gap: 5px;
+  margin-bottom: 20px;
+  width: 300px; /* Fixed width to prevent stretching */
+  margin-left: auto;
+  margin-right: auto; /* Center the grid horizontally */
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #222;
+  border: 2px solid #00ff00;
+  font-size: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 10px;
+  text-shadow: 0 0 10px #fff;
+}
+
+.cell:hover {
+  background-color: #c20b0b;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #00ff00;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #22dfd6;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  background-color: #ff00cc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
